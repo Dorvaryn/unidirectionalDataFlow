@@ -10,20 +10,20 @@ class CircleCrop(context: Context) : BitmapTransformation(context) {
     val paint = Paint()
 
     override fun transform(pool: BitmapPool, toTransform: Bitmap, outWidth: Int, outHeight: Int): Bitmap {
-        var bitmap = pool.get(outWidth, outHeight, Bitmap.Config.ARGB_8888);
+        var bitmap = pool.get(outWidth, outHeight, Bitmap.Config.ARGB_8888)
         if (bitmap == null) {
-            bitmap = Bitmap.createBitmap(outWidth, outHeight, Bitmap.Config.ARGB_8888);
+            bitmap = Bitmap.createBitmap(outWidth, outHeight, Bitmap.Config.ARGB_8888)
         }
 
-        val shader = BitmapShader(toTransform, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
+        val shader = BitmapShader(toTransform, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP)
 
-        paint.isAntiAlias = true;
-        paint.shader = shader;
+        paint.isAntiAlias = true
+        paint.shader = shader
 
-        val rect = RectF(0.0f, 0.0f, outWidth.toFloat(), outHeight.toFloat());
-        val canvas = Canvas(bitmap);
-        canvas.drawRoundRect(rect, outWidth / 2.0f, outHeight / 2.0f, paint);
-        return bitmap;
+        val rect = RectF(0.0f, 0.0f, outWidth.toFloat(), outHeight.toFloat())
+        val canvas = Canvas(bitmap)
+        canvas.drawRoundRect(rect, outWidth / 2.0f, outHeight / 2.0f, paint)
+        return bitmap
     }
 
     override fun getId() = "CircleCrop"

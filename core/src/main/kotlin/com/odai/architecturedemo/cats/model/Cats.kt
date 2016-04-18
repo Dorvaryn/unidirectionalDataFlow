@@ -5,7 +5,7 @@ import com.odai.architecturedemo.cat.model.Cat
 data class Cats (private val list: List<Cat>) {
 
     fun size(): Int {
-        return list.size;
+        return list.size
     }
 
     fun get(p1: Int): Cat {
@@ -25,11 +25,11 @@ data class Cats (private val list: List<Cat>) {
     }
 
     fun isEmpty(): Boolean {
-        return list.isEmpty();
+        return list.isEmpty()
     }
 
     fun <R> fold(initial: R, operation: (R, Cat) -> R): R = list.fold(initial, operation)
 
-    fun first(predicate: (Cat) -> Boolean): Cat? = list.first(predicate);
+    fun first(predicate: (Cat) -> Boolean): Cat? = list.first(predicate)
 
-};
+}

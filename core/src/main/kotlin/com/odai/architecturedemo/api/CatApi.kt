@@ -6,7 +6,7 @@ import rx.Observable
 
 interface CatApi {
 
-    fun getCats(): Observable<Cats>;
+    fun getCats(): Observable<Cats>
 
     fun getFavouriteCats(): Observable<Cats>
 

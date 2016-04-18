@@ -17,7 +17,7 @@ class AndroidLoadingView(context: Context, attrs: AttributeSet) : LoadingView, F
         get() = _content!!
         set(value) {
             _content = value
-        };
+        }
 
     private var snackBar: Snackbar? = null
 

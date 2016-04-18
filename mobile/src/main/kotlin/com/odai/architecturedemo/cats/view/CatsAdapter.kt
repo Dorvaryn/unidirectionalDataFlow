@@ -22,7 +22,7 @@ class CatsAdapter(
     }
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): CatsViewHolder? {
-        return CatsViewHolder(layoutInflater.inflate(R.layout.cat_entry_view, p0, false) as CatEntryView);
+        return CatsViewHolder(layoutInflater.inflate(R.layout.cat_entry_view, p0, false) as CatEntryView)
     }
 
     override fun getItemCount(): Int {

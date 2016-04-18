@@ -78,7 +78,7 @@ class CatsPresenter(
 
     private val catsObserver = object : DataObserver<Cats> {
         override fun onNext(p0: Cats) {
-            catsView.display(p0);
+            catsView.display(p0)
         }
     }
 

@@ -19,7 +19,7 @@ class CatActivity : AppCompatActivity() {
         get() = _catPresenter!!
         set(value) {
             _catPresenter = value
-        };
+        }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

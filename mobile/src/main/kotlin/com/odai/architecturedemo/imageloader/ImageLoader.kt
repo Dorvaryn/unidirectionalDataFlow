@@ -50,7 +50,7 @@ class ImageRequestBuilder(internal val uri: URI) {
 
     fun <T> DrawableRequestBuilder<T>.transform(array: Array<out BitmapTransformation>): DrawableRequestBuilder<T> {
         if(array.isEmpty()) {
-            return this;
+            return this
         } else {
             return this.transform(*array)
         }

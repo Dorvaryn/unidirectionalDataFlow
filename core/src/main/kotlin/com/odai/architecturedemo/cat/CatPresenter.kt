@@ -67,7 +67,7 @@ class CatPresenter(
 
     private val catObserver = object : DataObserver<Cat> {
         override fun onNext(p0: Cat) {
-            catView.display(p0);
+            catView.display(p0)
         }
     }
 

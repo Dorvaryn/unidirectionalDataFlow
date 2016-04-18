@@ -20,9 +20,9 @@ abstract class EventObserver<T>: Observer<Event<T>> {
         }
     }
 
-    abstract fun onLoading(event: Event<T>);
+    abstract fun onLoading(event: Event<T>)
 
-    abstract fun onIdle(event: Event<T>);
+    abstract fun onIdle(event: Event<T>)
 
-    abstract fun onError(event: Event<T>);
+    abstract fun onError(event: Event<T>)
 }

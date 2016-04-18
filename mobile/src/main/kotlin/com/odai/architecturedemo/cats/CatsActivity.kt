@@ -4,9 +4,6 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.odai.architecturedemo.CatApplication
 import com.odai.architecturedemo.R
-import com.odai.architecturedemo.cats.view.AndroidCatsView
-import com.odai.architecturedemo.cats.view.CatsView
-import com.odai.architecturedemo.loading.LoadingView
 import com.odai.architecturedemo.navigation.AndroidNavigator
 import kotlinx.android.synthetic.main.activity_cats.*
 
